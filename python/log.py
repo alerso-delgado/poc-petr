@@ -1,4 +1,4 @@
-# log.py
+# python/log.py
 import os
 import sys
 import logging
