@@ -2,7 +2,6 @@
   hosts: localhost
   tasks:
     - name: Install jsonpath-ng
-      pip:
+      ansible.builtin.pip:
         name: jsonpath-ng
-        become: true
-        state: present
+        extra_args: --user
