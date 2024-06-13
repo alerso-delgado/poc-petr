@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# add_paths_to_epg.py
 from log import initialize_log
 
 import requests
