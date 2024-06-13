@@ -1,5 +1,5 @@
 - name: Execute Python script
-  hosts: target_hosts
+  hosts: localhost
   tasks:
     - name: Run Python script
       command: python3 python/script.py
