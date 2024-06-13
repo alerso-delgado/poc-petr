@@ -3,6 +3,6 @@
   tasks:
     - name: Run Python script
       command: python3 python/script.py
-      register: outuput
+      register: output
 
     - debug: var=output.stdout_lines
