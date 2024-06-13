@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# python/mso_fabric.py
 from mso_session import MsoSession
 
 from jsonpath_ng.ext import parser

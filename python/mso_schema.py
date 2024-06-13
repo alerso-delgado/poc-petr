@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# python/mso_schema.py
 from mso_session import MsoSession
 
 import json

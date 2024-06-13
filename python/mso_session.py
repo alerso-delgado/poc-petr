@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# python/mso_session.py
 from config.server_config import ServerDictProps
 
 import json
