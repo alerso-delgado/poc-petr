@@ -1,4 +1,4 @@
-# python/config/server_config.py
+# config/server_config.py
 import os
 import json
 import pathlib
