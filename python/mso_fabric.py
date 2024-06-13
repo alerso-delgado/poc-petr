@@ -1,5 +1,5 @@
 # python/mso_fabric.py
-from mso_session import MsoSession
+from python.mso_session import MsoSession
 
 from jsonpath_ng.ext import parser
 

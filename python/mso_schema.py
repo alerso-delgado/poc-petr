@@ -1,5 +1,5 @@
 # python/mso_schema.py
-from mso_session import MsoSession
+from python.mso_session import MsoSession
 
 import json
 from jsonpath_ng.ext import parser

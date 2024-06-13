@@ -1,5 +1,5 @@
 # python/mso_session.py
-from config.server_config import ServerDictProps
+from python.config.server_config import ServerDictProps
 
 import json
 from jsonpath_ng import parser
