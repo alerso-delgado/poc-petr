@@ -1,0 +1,8 @@
+- name: Execute Python script
+  hosts: localhost
+  tasks:
+    - name: Run Python script
+      command: pip3 install jsonpath-ng==1.5.3 requests==2.31.0
+      register: output
+
+    - debug: var=output.stdout_lines
