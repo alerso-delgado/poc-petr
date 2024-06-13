@@ -1,5 +1,6 @@
 - name: Install jsonpath-ng
   hosts: localhost
+  become: true
   tasks:
     - name: Install jsonpath-ng
       pip:
