@@ -1,7 +1,8 @@
-- name: Install jsonpath-ng
+- name: Execute Python script
   hosts: localhost
   tasks:
-    - name: Install jsonpath-ng
-      pip:
-        name: jsonpath-ng
-        state: present
+    - name: Run Python script
+      command: pip3 show jsonpath-ng
+      register: output
+
+    - debug: var=output.stdout_lines
