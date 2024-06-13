@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# log.py
 import os
 import sys
 import logging
