@@ -6,7 +6,7 @@ import requests
 import sys
 requests.packages.urllib3.disable_warnings()
 
-from config.server_config import ServerDictProps
+from python.config.server_config import ServerDictProps
 from mso_session import MsoSession
 from mso_fabric import MsoFabric
 from mso_schema import MsoSchema
