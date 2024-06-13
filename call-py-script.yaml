@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Run Python script
-      script: python/add_paths_to_epg.py
+      script: "{{ role_path }}/files/python/add_paths_to_epg.py"
       register: output
 
     - debug: var=output.stdout_lines
