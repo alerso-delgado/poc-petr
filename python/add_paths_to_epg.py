@@ -7,10 +7,10 @@ import sys
 requests.packages.urllib3.disable_warnings()
 
 from python.config.server_config import ServerDictProps
-from mso_session import MsoSession
-from mso_fabric import MsoFabric
-from mso_schema import MsoSchema
-from csv_to_dict import csv_to_dict
+from python.mso_session import MsoSession
+from python.mso_fabric import MsoFabric
+from python.mso_schema import MsoSchema
+from python.csv_to_dict import csv_to_dict
 from jsonpath_ng import parser
 
 def create_payload_change(input: dict, fabric: MsoFabric):
