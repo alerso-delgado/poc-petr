@@ -1,7 +1,7 @@
 from config.server_config import ServerDictProps
 
 import json
-from jsonpath_ng.ext import parser
+from jsonpath_ng import parser
 
 import requests
 requests.packages.urllib3.disable_warnings()
