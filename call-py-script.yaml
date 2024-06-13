@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Run Python script
-      command: python3 python/script.py
+      command: python3 python/add_paths_to_epg.py
       register: output
 
     - debug: var=output.stdout_lines
