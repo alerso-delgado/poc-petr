@@ -1,6 +1,5 @@
 - name: Execute Python script
   hosts: target_hosts
-  gather_facts: false
   tasks:
     - name: Run Python script
       command: python3 script.py
