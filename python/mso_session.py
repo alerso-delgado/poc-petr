@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # python/mso_session.py
 from python.config.server_config import ServerDictProps
 
