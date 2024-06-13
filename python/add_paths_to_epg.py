@@ -9,7 +9,7 @@ from mso_session import MsoSession
 from mso_fabric import MsoFabric
 from mso_schema import MsoSchema
 from csv_to_dict import csv_to_dict
-from jsonpath_ng.ext import parser
+from jsonpath_ng import parser
 
 def create_payload_change(input: dict, fabric: MsoFabric):
     """
