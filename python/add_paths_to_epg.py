@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from log import initialize_log
 
 import requests

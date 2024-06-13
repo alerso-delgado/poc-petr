@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from mso_session import MsoSession
 
 import json

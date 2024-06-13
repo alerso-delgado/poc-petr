@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from config.server_config import ServerDictProps
 
 import json

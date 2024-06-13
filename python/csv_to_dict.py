@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import csv
 
 def csv_to_dict(file_path):
