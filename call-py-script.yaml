@@ -2,4 +2,4 @@
   hosts: target_hosts
   tasks:
     - name: Run Python script
-      command: python3 script.py
+      command: python3 python/script.py
