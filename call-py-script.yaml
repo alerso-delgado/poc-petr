@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Run Python script
-      command: python3 script.py
+      script: script.py
       register: output
 
     - debug: var=output.stdout_lines
