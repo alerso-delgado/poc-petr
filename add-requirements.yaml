@@ -4,4 +4,3 @@
     - name: Install jsonpath-ng
       ansible.builtin.pip:
         name: jsonpath-ng
-        extra_args: --user
