@@ -1,0 +1,8 @@
+- name: Create PETRO POC Ansible Virtual Environment
+  hosts: localhost
+  tasks:
+    - name: Create a new Python virtual environment
+      ansible.builtin.command:
+        cmd: python3 -m venv petro-poc
+      args:
+        creates: petro-poc/bin/activate
