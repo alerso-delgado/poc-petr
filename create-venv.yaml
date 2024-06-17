@@ -7,7 +7,16 @@
       args:
         creates: petro-poc/bin/activate
 
-    - name: Display the contents of the virtual environment directory
+    - name: Upgrade pip3
       ansible.builtin.shell:
-        cmd: ls -lrt petro-poc/bin
+        cmd: python3 -m pip install --upgrade pip
       register: venv_contents
+
+    - name: Install jsonpath-ng
+      ansible.builtin.pip:
+        name: jsonpath-ng
+    
+    - name: Display Installed Python Packages
+      ansible.builtin.shell:
+        cmd: pip3 list
+      register: installed_packages_output
