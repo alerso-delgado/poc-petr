@@ -4,3 +4,5 @@
     - name: Install jsonpath-ng
       ansible.builtin.pip:
         name: jsonpath-ng
+      environment:
+          PATH: "/home/runner/.local/bin:{{ lookup('env', 'PATH') }}"

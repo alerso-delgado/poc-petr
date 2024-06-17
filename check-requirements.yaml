@@ -32,23 +32,3 @@
       ansible.builtin.shell:
         cmd: pip3 list
       register: installed_packages_output
-
-    - name: Display Python Virtual Environment Paths
-      ansible.builtin.shell:
-        cmd: find / -type d -name 'bin' -exec sh -c 'echo {}; ls -l {}' \;
-      register: venv_paths_output
-
-    - name: Display Python System Paths
-      ansible.builtin.shell:
-        cmd: python3 -c "import sys; print(sys.path)"
-      register: python_system_paths_output
-
-    - name: Display Python Version Information
-      ansible.builtin.shell:
-        cmd: python3 -c "import sys; print(sys.version_info)"
-      register: python_version_info_output
-
-    - name: Display Python Compiler Information
-      ansible.builtin.shell:
-        cmd: python3 -c "import sysconfig; print(sysconfig.get_config_vars())"
-      register: python_compiler_info_output
