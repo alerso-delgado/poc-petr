@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Install jsonpath-ng
-      ansible.builtin.pip:
+      ansible.builtin.pip3:
         name: jsonpath-ng
       environment:
           PATH: "/home/runner/.local/bin:{{ lookup('env', 'PATH') }}"
