@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
     - name: Activate Ansible Virtual Environment
-      ansible.builtin.script:
-        script: petro-poc/bin/activate.csh
+      ansible.builtin.shell:
+        cmd: petro-poc/bin/activate.csh
       become: yes
 
     - name: Display the contents of the virtual environment directory
