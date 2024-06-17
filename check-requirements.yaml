@@ -5,22 +5,22 @@
   tasks:
     - name: Display Python Version
       ansible.builtin.shell:
-        cmd: python --version
+        cmd: python3 --version
       register: python_version_output
 
     - name: Display Python Path
       ansible.builtin.shell:
-        cmd: which python
+        cmd: which python3
       register: python_path_output
 
     - name: Display Python Site Packages Directory
       ansible.builtin.shell:
-        cmd: python -c "import site; print(site.getsitepackages()[0])"
+        cmd: python3 -c "import site; print(site.getsitepackages()[0])"
       register: python_site_packages_output
 
     - name: Display Python Executable Path
       ansible.builtin.shell:
-        cmd: python -c "import sys; print(sys.executable)"
+        cmd: python3 -c "import sys; print(sys.executable)"
       register: python_executable_output
 
     - name: Display Python Environment Variables
@@ -30,7 +30,7 @@
 
     - name: Display Installed Python Packages
       ansible.builtin.shell:
-        cmd: pip list
+        cmd: pip3 list
       register: installed_packages_output
 
     - name: Display Python Virtual Environment Paths
@@ -40,15 +40,15 @@
 
     - name: Display Python System Paths
       ansible.builtin.shell:
-        cmd: python -c "import sys; print(sys.path)"
+        cmd: python3 -c "import sys; print(sys.path)"
       register: python_system_paths_output
 
     - name: Display Python Version Information
       ansible.builtin.shell:
-        cmd: python -c "import sys; print(sys.version_info)"
+        cmd: python3 -c "import sys; print(sys.version_info)"
       register: python_version_info_output
 
     - name: Display Python Compiler Information
       ansible.builtin.shell:
-        cmd: python -c "import sysconfig; print(sysconfig.get_config_vars())"
+        cmd: python3 -c "import sysconfig; print(sysconfig.get_config_vars())"
       register: python_compiler_info_output
