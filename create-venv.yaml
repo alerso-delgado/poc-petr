@@ -9,5 +9,5 @@
 
     - name: Display the contents of the virtual environment directory
       ansible.builtin.shell:
-        cmd: ls petro-poc
+        cmd: ls -lart petro-poc
       register: venv_contents
