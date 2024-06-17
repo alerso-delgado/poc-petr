@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Activate Ansible Virtual Environment
-      ansible.builtin.shell:
+      ansible.builtin.command:
         cmd: ./petro-poc/bin/activate.csh
       become: yes
 
