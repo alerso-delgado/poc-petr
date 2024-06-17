@@ -6,3 +6,8 @@
         cmd: python3 -m venv petro-poc
       args:
         creates: petro-poc/bin/activate
+
+    - name: Display the contents of the virtual environment directory
+      ansible.builtin.shell:
+        cmd: ls petro-poc
+      register: venv_contents

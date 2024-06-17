@@ -1,6 +1,11 @@
 - name: Check PETRO POC Ansible Virtual Environment
   hosts: localhost
   tasks:
+    - name: Activate Ansible Virtual Environment
+      ansible.builtin.script:
+        script: petro-poc/bin/activate
+      become: yes
+
     - name: Display the contents of the virtual environment directory
       ansible.builtin.shell:
         cmd: ls petro-poc
