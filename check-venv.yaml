@@ -3,7 +3,7 @@
   tasks:
     - name: Activate Ansible Virtual Environment
       ansible.builtin.script:
-        script: petro-poc/bin/activate
+        script: petro-poc/bin/activate.csh
       become: yes
 
     - name: Display the contents of the virtual environment directory
