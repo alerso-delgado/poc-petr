@@ -21,10 +21,9 @@
         cmd: pip3 list
       register: installed_packages_output
 
-    - name: Read CSV file
-      read_csv:
-        path: python/input_files/add_paths_to_epg.csv
-        delimiter: ','
+    - name: Read CSV file into a variable
+      ansible.builtin.shell:
+        cmd: cat python/input_files/add_paths_to_epg_csv.csv
       register: add_paths_to_epg_csv
 
     - name: Run Python script
