@@ -1,2 +1,2 @@
 schema,siteName,templateName,applicationProfileName,epgName,podName,nodeName,intfName,intfType,vlan,microVlan,deploymentImmediacy,mode
-CITEX-VM,DC-01-FABRIC-01,SC-TN-CITEX-VM,AP-CITEX-VM,EPG-CITEX-VM,pod-1,DC-01-LEAF-1001 (Node-1001) ,eth1/23,port,2222,,immediate,untagged
+SC-TN-CITEX-VM,DC-01-FABRIC-01,CITEX-VM,AP-CITEX-VM,EPG-CITEX-VM,pod-1,DC-01-LEAF-1001 (Node-1001) ,eth1/23,port,2222,,immediate,untagged
