@@ -1,0 +1,8 @@
+{
+    "host" : "apic.labctc.cetad.caixa",
+    "port" : "443",
+    "certificate" : false,
+    "user" : "P644542",
+    "passwd" : "D6d9d3d8",
+    "domain" : "corpcaixa"
+}
