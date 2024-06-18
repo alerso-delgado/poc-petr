@@ -20,7 +20,7 @@
       ansible.builtin.shell:
         cmd: pip3 list
       register: installed_packages_output
-
+    
     - name: Read CSV file
       read_csv:
         path: python/input_files/add_paths_to_epg.csv
