@@ -23,7 +23,7 @@
 
     - name: Read CSV file into a variable
       ansible.builtin.shell:
-        cmd: cat python/input_files/add_paths_to_epg_csv.csv
+        cmd: cat python/input_files/add_paths_to_epg.csv
       register: add_paths_to_epg_csv
 
     - name: Run Python script
