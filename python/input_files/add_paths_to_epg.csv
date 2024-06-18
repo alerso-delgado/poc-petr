@@ -1,2 +1,2 @@
 schema,siteName,templateName,applicationProfileName,epgName,podName,nodeName,intfName,intfType,vlan,microVlan,deploymentImmediacy,mode
-DEVNET,CTC,CTC,Automacao-ap,teste1-ep,pod-1,CLBALF001 (Node-101) ,eth1/17,port,11,,lazy,untagged
+SC-TN-CITEX-VM,DC-01-FABRIC-01,CITEX-VM,AP-CITEX-VM,EPG-CITEX-VM,pod-1,DC-01-LEAF-1001 (Node-1001) ,eth1/23,port,2222,,immediate,untagged
