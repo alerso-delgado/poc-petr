@@ -1,9 +1,9 @@
 {
-    "host" : "mso.labctc.cetad.caixa",
+    "host" : "10.0.128.12",
     "port" : "443",
     "certificate" : false,
     "user" : "admin",
-    "passwd" : "cisco123",
+    "passwd" : "Brasilia#2021",
     "domain" : "local",
     "apiKeyName" : "Automation"
 }
