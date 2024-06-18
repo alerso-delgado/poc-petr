@@ -27,7 +27,7 @@
       register: add_paths_to_epg_csv
 
     - name: Run Python script
-      script: python/add_paths_to_epg.py --csv-file "{{ add_paths_to_epg_csv.path }}"
+      script: python/add_paths_to_epg.py --csv-file "{{ add_paths_to_epg_csv }}"
       register: output
 
     - debug: var=output.stdout_lines
