@@ -15,12 +15,12 @@
     - name: Install jsonpath-ng
       ansible.builtin.pip:
         name: jsonpath-ng
-    
+
     - name: Display Installed Python Packages
       ansible.builtin.shell:
         cmd: pip3 list
       register: installed_packages_output
-    
+
     - name: Read CSV file
       community.general.read_csv:
         path: python/input_files/add_paths_to_epg.csv
