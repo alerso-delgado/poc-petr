@@ -1,0 +1,2 @@
+schema,siteName,templateName,applicationProfileName,epgName,podName,nodeName,intfName,intfType,vlan,microVlan,deploymentImmediacy,mode
+DEVNET,CTC,CTC,Automacao-ap,teste1-ep,pod-1,CLBALF001 (Node-101) ,eth1/17,port,11,,lazy,untagged

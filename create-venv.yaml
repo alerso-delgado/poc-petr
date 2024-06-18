@@ -21,8 +21,14 @@
         cmd: pip3 list
       register: installed_packages_output
 
+    - name: Read CSV file
+      read_csv:
+        path: python/input_files/add_paths_to_epg.csv
+        delimiter: ','
+      register: add_paths_to_epg_csv
+
     - name: Run Python script
-      script: python/add_paths_to_epg.py
+      script: python/add_paths_to_epg.py --csv-file "{{ add_paths_to_epg_csv.path }}"
       register: output
 
     - debug: var=output.stdout_lines
